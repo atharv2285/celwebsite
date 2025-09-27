@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import celLogo from '@/assets/cel-logo.png';
 
 const HeroSection = () => {
@@ -11,64 +11,86 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
+    <section className="min-h-screen flex flex-col justify-center bg-gradient-hero relative overflow-hidden">
+      {/* Background Video */}
+      <div className="absolute inset-0 w-full h-full">
+        <iframe
+          src="https://www.youtube.com/embed/I8XqjTIJn_Q?autoplay=1&mute=1&loop=1&playlist=I8XqjTIJn_Q&controls=0&showinfo=0&rel=0&modestbranding=1&start=0"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          style={{ border: 'none' }}
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
+      </div>
+      
+      {/* Background overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/20"></div>
+      
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--yellow)_0%,_transparent_50%)] opacity-5"></div>
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          {/* Left Side - Logo and Content */}
-          <div className="space-y-8">
-           
+      <div className="container mx-auto px-6 relative z-10 flex-1 flex flex-col justify-center">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-16">
+            {/* Main Content - Centered */}
+            <div className="max-w-4xl mx-auto text-center space-y-8">
+              <div className="space-y-6">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                  <span className="text-foreground">Centre for</span>
+                  <br />
+                  <span className="gradient-text">Entrepreneurial</span>
+                  <br />
+                  <span className="text-foreground">Leadership</span>
+                </h2>
+                
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                  Carrying forward the BITSian startup legacy, CEL promotes entrepreneurship within the team, on the campus, and in the Indian startup ecosystem. 
+                </p>
 
-            <div className="space-y-6">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-foreground">Centre for</span>
-                <br />
-                <span className="gradient-text">Entrepreneurial</span>
-                <br />
-                <span className="text-foreground">Leadership</span>
-              </h2>
-              
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Carrying forward the BITSian startup legacy, CEL promotes entrepreneurship within the team, on the campus, and in the Indian startup ecosystem. 
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  onClick={() => scrollToSection('#initiatives')}
-                  className="btn-hero text-lg px-8 py-4"
-                >
-                  Explore Initiatives
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-                <Button 
-                  onClick={() => scrollToSection('#about')}
-                  className="btn-secondary text-lg px-8 py-4"
-                >
-                  Learn More
-                </Button>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button 
+                    onClick={() => scrollToSection('#initiatives')}
+                    className="btn-hero text-lg px-8 py-4"
+                  >
+                    Explore Initiatives
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Button>
+                  <Button 
+                    onClick={() => scrollToSection('#about')}
+                    className="btn-secondary text-lg px-8 py-4"
+                  >
+                    Learn More
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Right Side - Carousel/Video Placeholder */}
-          <div className="relative">
-            <div className="bg-card rounded-2xl overflow-hidden border border-yellow/20 relative group">
-              <div className="aspect-video bg-gradient-to-br from-yellow/10 to-transparent flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-20 h-20 bg-yellow/20 rounded-full flex items-center justify-center mx-auto group-hover:bg-yellow/30 transition-colors">
-                    <Play className="w-8 h-8 text-yellow ml-1" />
-                  </div>
-                  <p className="text-muted-foreground">CEL Journey</p>
-                </div>
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          {/* Stats Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-card rounded-xl p-6 border border-border card-hover text-center">
+              <div className="text-3xl font-bold gradient-text mb-2">20+</div>
+              <div className="text-foreground font-semibold mb-1">Years of Impact</div>
+              <div className="text-sm text-muted-foreground">Creating entrepreneurs</div>
             </div>
             
-            {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 w-8 h-8 bg-yellow/20 rounded-full animate-pulse"></div>
-            <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-yellow/30 rounded-full animate-bounce"></div>
+            <div className="bg-card rounded-xl p-6 border border-border card-hover text-center">
+              <div className="text-3xl font-bold gradient-text mb-2">200+</div>
+              <div className="text-foreground font-semibold mb-1">Founders Supported</div>
+              <div className="text-sm text-muted-foreground">Across various sectors</div>
+            </div>
+            
+            <div className="bg-card rounded-xl p-6 border border-border card-hover text-center">
+              <div className="text-3xl font-bold gradient-text mb-2">50+</div>
+              <div className="text-foreground font-semibold mb-1">Venture Partners</div>
+              <div className="text-sm text-muted-foreground">Global network</div>
+            </div>
+            
+            <div className="bg-card rounded-xl p-6 border border-border card-hover text-center">
+              <div className="text-3xl font-bold gradient-text mb-2">₹100M+</div>
+              <div className="text-foreground font-semibold mb-1">Value Created</div>
+              <div className="text-sm text-muted-foreground">By our alumni</div>
+            </div>
           </div>
         </div>
       </div>
