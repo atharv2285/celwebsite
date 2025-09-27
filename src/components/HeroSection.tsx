@@ -31,8 +31,7 @@ const HeroSection = () => {
               </h2>
               
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                The Centre for Entrepreneurial Leadership (CEL) is BITS Pilani's entrepreneurship cell entirely student-run. 
-                Carrying forward the BITSian startup legacy, we stand to drive change across India's entrepreneurial landscape.
+                Carrying forward the BITSian startup legacy, CEL promotes entrepreneurship within the team, on the campus, and in the Indian startup ecosystem. 
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
