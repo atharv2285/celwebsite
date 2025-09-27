@@ -19,21 +19,11 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Left Side - Logo and Content */}
           <div className="space-y-8">
-            <div className="flex items-center space-x-4">
-              <img 
-                src={celLogo} 
-                alt="CEL Logo" 
-                className="w-16 h-16 md:w-20 md:h-20 object-contain bulb-glow"
-              />
-              <div>
-                <h1 className="text-3xl md:text-4xl font-bold gradient-text">CEL</h1>
-                <p className="text-sm text-muted-foreground">BITS Pilani, Pilani Campus</p>
-              </div>
-            </div>
+           
 
             <div className="space-y-6">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-foreground">The Centre for</span>
+                <span className="text-foreground">Centre for</span>
                 <br />
                 <span className="gradient-text">Entrepreneurial</span>
                 <br />
