@@ -12,10 +12,10 @@
     --surface: 0 0% 8%;
     --surface-elevated: 0 0% 12%;
 
-    /* Yellow Brand Accent */
-    --yellow: 43 96% 56%;
-    --yellow-glow: 43 96% 66%;
-    --yellow-muted: 43 86% 46%;
+    /* Yellow Brand Accent - Updated to #F4CE2F */
+    --yellow: 48 92% 57%;
+    --yellow-glow: 48 100% 70%;
+    --yellow-muted: 48 86% 50%;
 
     /* Interactive Elements */
     --card: 0 0% 8%;
@@ -25,7 +25,7 @@
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 43 96% 56%;
+    --primary: 48 92% 57%;
     --primary-foreground: 0 0% 4%;
 
     --secondary: 0 0% 16%;
@@ -34,7 +34,7 @@
     --muted: 0 0% 16%;
     --muted-foreground: 0 0% 60%;
 
-    --accent: 43 96% 56%;
+    --accent: 48 92% 57%;
     --accent-foreground: 0 0% 4%;
 
     --destructive: 0 72% 51%;
@@ -42,7 +42,7 @@
 
     --border: 0 0% 20%;
     --input: 0 0% 16%;
-    --ring: 43 96% 56%;
+    --ring: 48 92% 57%;
 
     --radius: 0.75rem;
 
@@ -55,19 +55,12 @@
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
