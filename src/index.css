@@ -133,18 +133,6 @@
   /* Bulb Logo Animation */
   .bulb-glow {
     filter: drop-shadow(0 0 20px hsl(var(--yellow) / 0.8));
-    animation: pulse-glow 3s ease-in-out infinite;
-  }
-
-  @keyframes pulse-glow {
-    0%, 100% { 
-      filter: drop-shadow(0 0 20px hsl(var(--yellow) / 0.8));
-      transform: scale(1);
-    }
-    50% { 
-      filter: drop-shadow(0 0 30px hsl(var(--yellow) / 1));
-      transform: scale(1.05);
-    }
   }
 
   /* Card Hover Effects */
