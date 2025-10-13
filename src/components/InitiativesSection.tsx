@@ -77,9 +77,9 @@ const InitiativesSection = () => {
                         {/* Logo */}
                         <div className="mb-4">
                           {initiative.logo ? (
-                            <img src={initiative.logo} alt={`${initiative.title} logo`} className="w-20 h-20 object-contain mx-auto" />
+                            <img src={initiative.logo} alt={`${initiative.title} logo`} className="w-60 h-60 object-contain mx-auto" />
                           ) : (
-                            <div className="w-20 h-20 bg-yellow/40 rounded-lg mx-auto"></div>
+                            <div className="w-60 h-60 bg-yellow/40 rounded-lg mx-auto"></div>
                           )}
                         </div>
                         <h3 className="text-xl font-bold text-foreground mb-1">{initiative.title}</h3>
