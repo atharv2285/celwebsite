@@ -68,26 +68,26 @@ const HeroSection = () => {
 
           {/* Stats Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-card rounded-xl p-6 border border-border card-hover text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">20+</div>
+            <div className="bg-card rounded-xl p-6 border-2 border-yellow/60 card-hover text-center glow-yellow">
+              <div className="text-5xl font-bold gradient-text mb-2">20+</div>
               <div className="text-foreground font-semibold mb-1">Years of Impact</div>
               <div className="text-sm text-muted-foreground">Creating entrepreneurs</div>
             </div>
             
-            <div className="bg-card rounded-xl p-6 border border-border card-hover text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">200+</div>
+            <div className="bg-card rounded-xl p-6 border-2 border-yellow/60 card-hover text-center glow-yellow">
+              <div className="text-5xl font-bold gradient-text mb-2">200+</div>
               <div className="text-foreground font-semibold mb-1">Founders Supported</div>
               <div className="text-sm text-muted-foreground">Across various sectors</div>
             </div>
             
-            <div className="bg-card rounded-xl p-6 border border-border card-hover text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">50+</div>
+            <div className="bg-card rounded-xl p-6 border-2 border-yellow/60 card-hover text-center glow-yellow">
+              <div className="text-5xl font-bold gradient-text mb-2">50+</div>
               <div className="text-foreground font-semibold mb-1">Venture Partners</div>
               <div className="text-sm text-muted-foreground">Global network</div>
             </div>
             
-            <div className="bg-card rounded-xl p-6 border border-border card-hover text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">₹100M+</div>
+            <div className="bg-card rounded-xl p-6 border-2 border-yellow/60 card-hover text-center glow-yellow">
+              <div className="text-5xl font-bold gradient-text mb-2">₹100M+</div>
               <div className="text-foreground font-semibold mb-1">Value Created</div>
               <div className="text-sm text-muted-foreground">By our alumni</div>
             </div>

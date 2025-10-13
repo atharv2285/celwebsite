@@ -11,7 +11,7 @@ const Header = () => {
     { name: 'Events', href: '#events' },
     { name: 'Initiatives', href: '#initiatives' },
     { name: 'Team', href: '#team' },
-    { name: 'Join CEL', href: '#join' },
+    { name: 'Contact Us', href: '#join' },
   ];
 
   const scrollToSection = (href: string) => {
