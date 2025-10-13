@@ -27,13 +27,12 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center">
             <img 
               src={celLogo} 
               alt="CEL Logo" 
-              className="w-10 h-10 bulb-glow rounded-lg"
+              className="w-16 h-16 bulb-glow rounded-lg"
             />
-            <span className="text-2xl font-bold gradient-text">CEL</span>
           </div>
 
           {/* Desktop Navigation */}
