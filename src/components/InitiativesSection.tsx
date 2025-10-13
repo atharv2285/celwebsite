@@ -9,34 +9,40 @@ const InitiativesSection = () => {
     {
       logo: conquestLogo,
       title: "Conquest",
+      fullName: "Conquest",
       description: "Asia's largest student-run Startup Accelerator — we work closely with 15-20 early-stage startups handpicked from over 3000+ applications across India every year, helping accelerate their growth journeys.",
       color: "from-yellow/10 to-orange-500/10"
     },
     {
       logo: eweekLogo,
       title: "E-Week",
+      fullName: "Entrepreneurship Week",
       description: "CEL's flagship on-campus initiative, organised by the newly recruited batch every year. E-Week brings together the entire campus for a week of building and creativity.",
       color: "from-blue-500/10 to-purple-500/10"
     },
     {
       logo: redLogo,
       title: "RED",
+      fullName: "Rural Entrepreneurship Development",
       description: "From bringing Digital Payments to Pilani to empowering local women entrepreneurs, RED is our attempt to empower the local Pilani community by making them self-reliant.",
       color: "from-red-500/10 to-pink-500/10"
     },
     {
       logo: sisLogo,
       title: "SiS",
+      fullName: "Summer in a Startup",
       description: "Drawing onto CEL's startup connections, SiS connects 5K+ BITSians across campuses with disruptive early-stage startups through internships.",
       color: "from-green-500/10 to-emerald-500/10"
     },
     {
       title: "Venture Arm",
+      fullName: "Venture Arm",
       description: "A student-run venture arm aiming to back India's most promising early-stage startups.",
       color: "from-purple-500/10 to-indigo-500/10"
     },
     {
       title: "Venture Studio",
+      fullName: "Venture Studio",
       description: "Our innovation lab where we build and launch new ventures from the ground up, combining entrepreneurial expertise with cutting-edge technology.",
       color: "from-teal-500/10 to-cyan-500/10"
     }
@@ -69,14 +75,15 @@ const InitiativesSection = () => {
                       <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
                       <div className="relative z-10 text-center">
                         {/* Logo */}
-                        <div className="w-16 h-16 mx-auto mb-4 bg-yellow/20 rounded-xl flex items-center justify-center">
+                        <div className="mb-4">
                           {initiative.logo ? (
-                            <img src={initiative.logo} alt={`${initiative.title} logo`} className="w-12 h-12 object-contain" />
+                            <img src={initiative.logo} alt={`${initiative.title} logo`} className="w-20 h-20 object-contain mx-auto" />
                           ) : (
-                            <div className="w-12 h-12 bg-yellow/40 rounded-lg"></div>
+                            <div className="w-20 h-20 bg-yellow/40 rounded-lg mx-auto"></div>
                           )}
                         </div>
-                        <h3 className="text-xl font-bold text-foreground">{initiative.title}</h3>
+                        <h3 className="text-xl font-bold text-foreground mb-1">{initiative.title}</h3>
+                        <p className="text-sm text-muted-foreground">{initiative.fullName}</p>
                       </div>
                     </div>
                   </div>
