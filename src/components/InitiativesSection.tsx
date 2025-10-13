@@ -75,11 +75,11 @@ const InitiativesSection = () => {
                       <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
                       <div className="relative z-10 text-center">
                         {/* Logo */}
-                        <div className="mb-4">
+                        <div className="mb-3">
                           {initiative.logo ? (
-                            <img src={initiative.logo} alt={`${initiative.title} logo`} className="w-60 h-60 object-contain mx-auto" />
+                            <img src={initiative.logo} alt={`${initiative.title} logo`} className="w-24 h-24 object-contain mx-auto" />
                           ) : (
-                            <div className="w-60 h-60 bg-yellow/40 rounded-lg mx-auto"></div>
+                            <div className="w-24 h-24 bg-yellow/40 rounded-lg mx-auto"></div>
                           )}
                         </div>
                         <h3 className="text-xl font-bold text-foreground mb-1">{initiative.title}</h3>
