@@ -31,7 +31,7 @@ const Header = () => {
             <img 
               src={celLogo} 
               alt="CEL Logo" 
-              className="w-24 h-16 bulb-glow rounded-lg"
+              className="w-20 h-12 bulb-glow rounded-lg"
             />
           </div>
 
