@@ -65,37 +65,44 @@ const InitiativesSection = () => {
           </div>
 
           {/* Initiatives Grid - 3 in a row, 2 rows */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {initiatives.map((initiative, index) => (
-              <div key={index} className="flip-card">
+              <div key={index} className="flip-card p-1">
                 <div className="flip-card-inner">
                   {/* Front of card - Logo and Title */}
-                  <div className="flip-card-front bg-card rounded-xl border border-border card-hover">
-                    <div className={`h-72 bg-gradient-to-br ${initiative.color} relative flex flex-col items-center justify-center p-6`}>
+                  <div className="flip-card-front bg-card rounded-xl border-2 border-border">
+                    <div className={`h-80 bg-gradient-to-br ${initiative.color} relative flex flex-col items-center justify-center p-8 rounded-xl`}>
                       <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
-                      <div className="relative z-10 text-center w-full">
-                        {/* Logo */}
-                        <div className="mb-4 flex items-center justify-center h-32">
+                      <div className="relative z-10 text-center w-full space-y-4">
+                        {/* Logo Container */}
+                        <div className="flex items-center justify-center h-40 mb-2">
                           {initiative.logo ? (
-                            <img src={initiative.logo} alt={`${initiative.title} logo`} className="max-w-[160px] max-h-32 object-contain mx-auto" />
+                            <img 
+                              src={initiative.logo} 
+                              alt={`${initiative.title} logo`} 
+                              className="max-w-[140px] max-h-40 w-auto h-auto object-contain"
+                            />
                           ) : (
-                            <div className="w-24 h-24 bg-yellow/40 rounded-lg mx-auto flex items-center justify-center">
-                              <span className="text-2xl font-bold text-foreground">{initiative.title[0]}</span>
+                            <div className="w-28 h-28 bg-yellow/40 rounded-xl flex items-center justify-center">
+                              <span className="text-3xl font-bold text-foreground">{initiative.title[0]}</span>
                             </div>
                           )}
                         </div>
-                        <h3 className="text-2xl font-bold text-foreground mb-2">{initiative.title}</h3>
-                        <p className="text-sm text-muted-foreground">{initiative.fullName}</p>
+                        {/* Text Container */}
+                        <div className="space-y-2">
+                          <h3 className="text-2xl font-bold text-foreground leading-tight">{initiative.title}</h3>
+                          <p className="text-sm text-muted-foreground">{initiative.fullName}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
 
                   {/* Back of card - Description */}
-                  <div className="flip-card-back bg-card rounded-xl border border-border card-hover">
-                    <div className={`h-72 bg-gradient-to-br ${initiative.color} relative p-8 flex items-center justify-center`}>
+                  <div className="flip-card-back bg-card rounded-xl border-2 border-border">
+                    <div className={`h-80 bg-gradient-to-br ${initiative.color} relative p-8 flex items-center justify-center rounded-xl`}>
                       <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
-                      <div className="relative z-10">
-                        <h3 className="text-xl font-bold text-foreground mb-4 text-center">{initiative.title}</h3>
+                      <div className="relative z-10 space-y-4">
+                        <h3 className="text-xl font-bold text-foreground text-center">{initiative.title}</h3>
                         <p className="text-muted-foreground text-sm leading-relaxed text-center">
                           {initiative.description}
                         </p>
