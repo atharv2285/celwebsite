@@ -104,18 +104,6 @@ const InitiativesSection = () => {
               </div>
             ))}
           </div>
-
-          {/* Call to Action */}
-          <div className="mt-16 bg-gradient-hero rounded-2xl p-12 text-center border border-yellow/20">
-            <h3 className="text-3xl font-bold text-foreground mb-4">Ready to Get Started?</h3>
-            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join CEL today and get access to all our initiatives, programs, and the support you need to build your dream startup.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-hero">Apply for Incubation</button>
-              <button className="btn-secondary">View All Programs</button>
-            </div>
-          </div>
         </div>
       </div>
     </section>

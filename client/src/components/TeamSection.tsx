@@ -167,15 +167,6 @@ const TeamSection = () => {
               ))}
             </div>
           </div>
-
-          {/* Join Team CTA */}
-          <div className="mt-16 bg-card rounded-2xl p-8 border border-yellow/20 text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Want to Join Our Team?</h3>
-            <p className="text-muted-foreground mb-6">
-              We're always looking for passionate individuals to help drive our mission forward.
-            </p>
-            <button className="btn-hero">View Open Positions</button>
-          </div>
         </div>
       </div>
     </section>
