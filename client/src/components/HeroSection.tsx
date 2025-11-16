@@ -1,15 +1,4 @@
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
-import celLogo from '@/assets/cel-logo.png';
-
 const HeroSection = () => {
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="min-h-screen flex flex-col justify-center bg-gradient-hero relative overflow-hidden">
       {/* Background Video */}
@@ -46,22 +35,6 @@ const HeroSection = () => {
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                   Carrying forward the BITSian startup legacy, CEL promotes entrepreneurship within the team, on the campus, and in the Indian startup ecosystem. 
                 </p>
-
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button 
-                    onClick={() => scrollToSection('#initiatives')}
-                    className="btn-hero text-lg px-8 py-4"
-                  >
-                    Explore Initiatives
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </Button>
-                  <Button 
-                    onClick={() => scrollToSection('#about')}
-                    className="btn-secondary text-lg px-8 py-4"
-                  >
-                    Learn More
-                  </Button>
-                </div>
               </div>
             </div>
           </div>
