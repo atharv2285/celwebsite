@@ -147,56 +147,56 @@
     transform: translateY(-4px);
   }
 
-  /* Premium Dark Gradient Cards */
+  /* Premium Dark Gradient Cards - Ultra Dark Theme */
   .gradient-card-1 {
-    background: linear-gradient(135deg, #1a2332 0%, #2d2d2d 100%);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(135deg, #0d1821 0%, #1a1a1a 100%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .gradient-card-1:hover {
-    background: linear-gradient(135deg, #1f2938 0%, #353535 100%);
-    border: 1px solid rgba(244, 206, 47, 0.3);
-    box-shadow: 0 8px 32px rgba(244, 206, 47, 0.15), 0 0 0 1px rgba(244, 206, 47, 0.1);
+    background: linear-gradient(135deg, #141f2b 0%, #222222 100%);
+    border: 1px solid rgba(244, 206, 47, 0.4);
+    box-shadow: 0 8px 32px rgba(244, 206, 47, 0.2), 0 0 0 1px rgba(244, 206, 47, 0.15);
     transform: translateY(-4px);
   }
 
   .gradient-card-2 {
-    background: linear-gradient(135deg, #1e1533 0%, #0a0a0a 100%);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(135deg, #120a1f 0%, #050505 100%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .gradient-card-2:hover {
-    background: linear-gradient(135deg, #251940 0%, #121212 100%);
-    border: 1px solid rgba(244, 206, 47, 0.3);
-    box-shadow: 0 8px 32px rgba(244, 206, 47, 0.15), 0 0 0 1px rgba(244, 206, 47, 0.1);
+    background: linear-gradient(135deg, #1a1028 0%, #0d0d0d 100%);
+    border: 1px solid rgba(244, 206, 47, 0.4);
+    box-shadow: 0 8px 32px rgba(244, 206, 47, 0.2), 0 0 0 1px rgba(244, 206, 47, 0.15);
     transform: translateY(-4px);
   }
 
   .gradient-card-3 {
-    background: linear-gradient(135deg, #0d2a3a 0%, #0f1419 100%);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(135deg, #081621 0%, #0a0a0a 100%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .gradient-card-3:hover {
-    background: linear-gradient(135deg, #123141 0%, #161b20 100%);
-    border: 1px solid rgba(244, 206, 47, 0.3);
-    box-shadow: 0 8px 32px rgba(244, 206, 47, 0.15), 0 0 0 1px rgba(244, 206, 47, 0.1);
+    background: linear-gradient(135deg, #0f1f2a 0%, #121212 100%);
+    border: 1px solid rgba(244, 206, 47, 0.4);
+    box-shadow: 0 8px 32px rgba(244, 206, 47, 0.2), 0 0 0 1px rgba(244, 206, 47, 0.15);
     transform: translateY(-4px);
   }
 
   .gradient-card-4 {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(135deg, #0f0f1e 0%, #0c1428 100%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .gradient-card-4:hover {
-    background: linear-gradient(135deg, #1f1f35 0%, #1b2645 100%);
-    border: 1px solid rgba(244, 206, 47, 0.3);
-    box-shadow: 0 8px 32px rgba(244, 206, 47, 0.15), 0 0 0 1px rgba(244, 206, 47, 0.1);
+    background: linear-gradient(135deg, #161628 0%, #131b30 100%);
+    border: 1px solid rgba(244, 206, 47, 0.4);
+    box-shadow: 0 8px 32px rgba(244, 206, 47, 0.2), 0 0 0 1px rgba(244, 206, 47, 0.15);
     transform: translateY(-4px);
   }
 
