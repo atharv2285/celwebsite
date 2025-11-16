@@ -71,18 +71,20 @@ const InitiativesSection = () => {
                 <div className="flip-card-inner">
                   {/* Front of card - Logo and Title */}
                   <div className="flip-card-front bg-card rounded-xl border border-border card-hover">
-                    <div className={`h-48 bg-gradient-to-br ${initiative.color} relative flex flex-col items-center justify-center`}>
+                    <div className={`h-72 bg-gradient-to-br ${initiative.color} relative flex flex-col items-center justify-center p-6`}>
                       <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
-                      <div className="relative z-10 text-center">
+                      <div className="relative z-10 text-center w-full">
                         {/* Logo */}
-                        <div className="mb-3">
+                        <div className="mb-4 flex items-center justify-center h-32">
                           {initiative.logo ? (
-                            <img src={initiative.logo} alt={`${initiative.title} logo`} className="w-36 h-36 object-contain mx-auto" />
+                            <img src={initiative.logo} alt={`${initiative.title} logo`} className="max-w-[160px] max-h-32 object-contain mx-auto" />
                           ) : (
-                            <div className="w-36 h-36 bg-yellow/40 rounded-lg mx-auto"></div>
+                            <div className="w-24 h-24 bg-yellow/40 rounded-lg mx-auto flex items-center justify-center">
+                              <span className="text-2xl font-bold text-foreground">{initiative.title[0]}</span>
+                            </div>
                           )}
                         </div>
-                        <h3 className="text-xl font-bold text-foreground mb-1">{initiative.title}</h3>
+                        <h3 className="text-2xl font-bold text-foreground mb-2">{initiative.title}</h3>
                         <p className="text-sm text-muted-foreground">{initiative.fullName}</p>
                       </div>
                     </div>
@@ -90,10 +92,10 @@ const InitiativesSection = () => {
 
                   {/* Back of card - Description */}
                   <div className="flip-card-back bg-card rounded-xl border border-border card-hover">
-                    <div className={`h-48 bg-gradient-to-br ${initiative.color} relative p-6 flex items-center justify-center`}>
+                    <div className={`h-72 bg-gradient-to-br ${initiative.color} relative p-8 flex items-center justify-center`}>
                       <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
                       <div className="relative z-10">
-                        <h3 className="text-xl font-bold text-foreground mb-3 text-center">{initiative.title}</h3>
+                        <h3 className="text-xl font-bold text-foreground mb-4 text-center">{initiative.title}</h3>
                         <p className="text-muted-foreground text-sm leading-relaxed text-center">
                           {initiative.description}
                         </p>
