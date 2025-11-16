@@ -11,8 +11,7 @@ const AboutSection = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-yellow mx-auto mb-8"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              The College Entrepreneurship League is a dynamic community of student innovators, 
-              dreamers, and future business leaders who are passionate about transforming ideas into impact.
+              "Think Big" sits at the heart of who we are, a group of students who love thinking, iterating, and building. And, we are always on the lookout to connect with people who share that spirit, on campus and beyond. Through our initiatives, we reach every part of the ecosystem, from our own team and fellow students to full-fledged founders, aspiring founders, and even rural communities. Over the last 20 years, these have helped us grow into a global network of mentors, investors, operators, and students united by one goal: adding more builders to the tribe.
             </p>
           </div>
 
