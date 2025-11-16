@@ -3,9 +3,7 @@ import HeroSection from '@/components/HeroSection';
 import ThinkBigSection from '@/components/ThinkBigSection';
 import InitiativesSection from '@/components/InitiativesSection';
 import AboutSection from '@/components/AboutSection';
-import EventsSection from '@/components/EventsSection';
 import TeamSection from '@/components/TeamSection';
-import JoinSection from '@/components/JoinSection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -17,9 +15,7 @@ const Index = () => {
         <AboutSection />
         <InitiativesSection />
         <ThinkBigSection />
-        <EventsSection />
         <TeamSection />
-        <JoinSection />
       </main>
       <Footer />
     </div>
