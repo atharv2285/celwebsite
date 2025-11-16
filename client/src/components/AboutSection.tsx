@@ -1,30 +1,4 @@
-import { Target, Users, TrendingUp } from 'lucide-react';
-import celLogo from '@/assets/cel-logo.png';
-
 const AboutSection = () => {
-  const values = [
-    {
-      icon: <img src={celLogo} alt="CEL Logo" className="w-8 h-8" />,
-      title: "Innovation First",
-      description: "We believe in the power of creative thinking and breakthrough ideas that change the world."
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: "Community Driven",
-      description: "Building a supportive ecosystem where entrepreneurs collaborate and grow together."
-    },
-    {
-      icon: <Target className="w-8 h-8" />,
-      title: "Goal Oriented",
-      description: "Focused on turning ambitious visions into viable businesses with measurable impact."
-    },
-    {
-      icon: <TrendingUp className="w-8 h-8" />,
-      title: "Growth Mindset",
-      description: "Embracing challenges, learning from failures, and constantly evolving our approach."
-    }
-  ];
-
   return (
     <section id="about" className="py-24 bg-surface relative">
       <div className="container mx-auto px-6">
@@ -83,22 +57,6 @@ const AboutSection = () => {
                   <div className="text-xs text-muted-foreground">Across all programs</div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Core Values */}
-          <div>
-            <h3 className="text-3xl font-bold text-center text-foreground mb-12">Our Core Values</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {values.map((value, index) => (
-                <div key={index} className="bg-card rounded-xl p-8 border border-border card-hover text-center">
-                  <div className="text-yellow mb-4 flex justify-center">
-                    {value.icon}
-                  </div>
-                  <h4 className="text-xl font-bold text-foreground mb-3">{value.title}</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{value.description}</p>
-                </div>
-              ))}
             </div>
           </div>
         </div>
