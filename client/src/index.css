@@ -147,6 +147,75 @@
     transform: translateY(-4px);
   }
 
+  /* Premium Dark Gradient Cards */
+  .gradient-card-1 {
+    background: linear-gradient(135deg, #1a2332 0%, #2d2d2d 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .gradient-card-1:hover {
+    background: linear-gradient(135deg, #1f2938 0%, #353535 100%);
+    border: 1px solid rgba(244, 206, 47, 0.3);
+    box-shadow: 0 8px 32px rgba(244, 206, 47, 0.15), 0 0 0 1px rgba(244, 206, 47, 0.1);
+    transform: translateY(-4px);
+  }
+
+  .gradient-card-2 {
+    background: linear-gradient(135deg, #1e1533 0%, #0a0a0a 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .gradient-card-2:hover {
+    background: linear-gradient(135deg, #251940 0%, #121212 100%);
+    border: 1px solid rgba(244, 206, 47, 0.3);
+    box-shadow: 0 8px 32px rgba(244, 206, 47, 0.15), 0 0 0 1px rgba(244, 206, 47, 0.1);
+    transform: translateY(-4px);
+  }
+
+  .gradient-card-3 {
+    background: linear-gradient(135deg, #0d2a3a 0%, #0f1419 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .gradient-card-3:hover {
+    background: linear-gradient(135deg, #123141 0%, #161b20 100%);
+    border: 1px solid rgba(244, 206, 47, 0.3);
+    box-shadow: 0 8px 32px rgba(244, 206, 47, 0.15), 0 0 0 1px rgba(244, 206, 47, 0.1);
+    transform: translateY(-4px);
+  }
+
+  .gradient-card-4 {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .gradient-card-4:hover {
+    background: linear-gradient(135deg, #1f1f35 0%, #1b2645 100%);
+    border: 1px solid rgba(244, 206, 47, 0.3);
+    box-shadow: 0 8px 32px rgba(244, 206, 47, 0.15), 0 0 0 1px rgba(244, 206, 47, 0.1);
+    transform: translateY(-4px);
+  }
+
+  /* Premium Card Text Styles */
+  .card-title {
+    color: #F2F2F2;
+    font-weight: 700;
+  }
+
+  .card-subtitle {
+    color: #EAEAEA;
+    font-weight: 600;
+  }
+
+  .card-description {
+    color: #A5A5A5;
+    font-weight: 400;
+  }
+
   /* Team Member Overlay */
   .team-overlay {
     position: relative;

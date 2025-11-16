@@ -41,28 +41,28 @@ const HeroSection = () => {
 
           {/* Stats Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="bg-card rounded-lg p-4 border border-yellow/60 card-hover text-center">
-              <div className="text-3xl font-bold gradient-text mb-1">20+</div>
-              <div className="text-foreground font-semibold mb-1 text-sm">Years of Impact</div>
-              <div className="text-xs text-muted-foreground">Creating entrepreneurs</div>
+            <div className="gradient-card-1 rounded-md p-6 text-center" data-testid="card-stat-years">
+              <div className="text-3xl font-bold gradient-text mb-2" data-testid="text-stat-years-value">20+</div>
+              <div className="card-subtitle mb-1 text-sm" data-testid="text-stat-years-title">Years of Impact</div>
+              <div className="text-xs card-description" data-testid="text-stat-years-desc">Creating entrepreneurs</div>
             </div>
             
-            <div className="bg-card rounded-lg p-4 border border-yellow/60 card-hover text-center">
-              <div className="text-3xl font-bold gradient-text mb-1">200+</div>
-              <div className="text-foreground font-semibold mb-1 text-sm">Founders Supported</div>
-              <div className="text-xs text-muted-foreground">Across various sectors</div>
+            <div className="gradient-card-2 rounded-md p-6 text-center" data-testid="card-stat-founders">
+              <div className="text-3xl font-bold gradient-text mb-2" data-testid="text-stat-founders-value">200+</div>
+              <div className="card-subtitle mb-1 text-sm" data-testid="text-stat-founders-title">Founders Supported</div>
+              <div className="text-xs card-description" data-testid="text-stat-founders-desc">Across various sectors</div>
             </div>
             
-            <div className="bg-card rounded-lg p-4 border border-yellow/60 card-hover text-center">
-              <div className="text-3xl font-bold gradient-text mb-1">50+</div>
-              <div className="text-foreground font-semibold mb-1 text-sm">Venture Partners</div>
-              <div className="text-xs text-muted-foreground">Global network</div>
+            <div className="gradient-card-3 rounded-md p-6 text-center" data-testid="card-stat-partners">
+              <div className="text-3xl font-bold gradient-text mb-2" data-testid="text-stat-partners-value">50+</div>
+              <div className="card-subtitle mb-1 text-sm" data-testid="text-stat-partners-title">Venture Partners</div>
+              <div className="text-xs card-description" data-testid="text-stat-partners-desc">Global network</div>
             </div>
             
-            <div className="bg-card rounded-lg p-4 border border-yellow/60 card-hover text-center">
-              <div className="text-3xl font-bold gradient-text mb-1">₹100M+</div>
-              <div className="text-foreground font-semibold mb-1 text-sm">Value Created</div>
-              <div className="text-xs text-muted-foreground">By our alumni</div>
+            <div className="gradient-card-4 rounded-md p-6 text-center" data-testid="card-stat-value">
+              <div className="text-3xl font-bold gradient-text mb-2" data-testid="text-stat-value-amount">₹100M+</div>
+              <div className="card-subtitle mb-1 text-sm" data-testid="text-stat-value-title">Value Created</div>
+              <div className="text-xs card-description" data-testid="text-stat-value-desc">By our alumni</div>
             </div>
           </div>
         </div>

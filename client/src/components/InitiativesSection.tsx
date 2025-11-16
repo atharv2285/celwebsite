@@ -1,7 +1,8 @@
 import conquestLogo from '@/assets/Conquest Logo.png';
-import eweekLogo from '@/assets/Eweek.jpg';
+import eweekLogo from '@assets/Group 364_1763295048372.png';
 import redLogo from '@/assets/RED.png';
 import sisLogo from '@/assets/sis 1.png';
+import ventureArmLogo from '@assets/CEL Fund logo dark bg_1763295054302.png';
 
 const InitiativesSection = () => {
   const initiatives = [
@@ -38,6 +39,7 @@ const InitiativesSection = () => {
       borderColor: "border-green-200 dark:border-green-800"
     },
     {
+      logo: ventureArmLogo,
       title: "Venture Arm",
       fullName: "Venture Arm",
       description: "A student-run venture arm aiming to back India's most promising early-stage startups.",
