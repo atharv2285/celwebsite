@@ -1,0 +1,8 @@
+node_modules
+.replit
+.config
+.git
+.local
+.cache
+server
+*.log

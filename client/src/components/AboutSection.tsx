@@ -1,3 +1,5 @@
+import teamImage from "@assets/BITS PILANI_CONQUEST-428_1763296550995.jpg";
+
 const AboutSection = () => {
   return (
     <section id="about" className="py-24 bg-surface relative">
@@ -10,9 +12,31 @@ const AboutSection = () => {
               <span className="gradient-text">CEL</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-yellow mx-auto mb-8"></div>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              "Think Big" sits at the heart of who we are, a group of students who love thinking, iterating, and building. And, we are always on the lookout to connect with people who share that spirit, on campus and beyond. Through our initiatives, we reach every part of the ecosystem, from our own team and fellow students to full-fledged founders, aspiring founders, and even rural communities. Over the last 20 years, these have helped us grow into a global network of mentors, investors, operators, and students united by one goal: adding more builders to the tribe.
-            </p>
+          </div>
+
+          {/* About Content with Image */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="space-y-6">
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                "Think Big" sits at the heart of who we are, a group of students who love thinking, iterating, and building. And, we are always on the lookout to connect with people who share that spirit, on campus and beyond.
+              </p>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                Through our initiatives, we reach every part of the ecosystem, from our own team and fellow students to full-fledged founders, aspiring founders, and even rural communities.
+              </p>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                Over the last 20 years, these have helped us grow into a global network of mentors, investors, operators, and students united by one goal: adding more builders to the tribe.
+              </p>
+            </div>
+
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden border border-yellow/20 glow-yellow">
+                <img 
+                  src={teamImage} 
+                  alt="CEL Team at Demo Day Event" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Main Story */}
